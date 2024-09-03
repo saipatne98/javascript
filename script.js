@@ -12,28 +12,43 @@
 //     console.log(evt.target)
 // }
 
-let btn1=document.querySelector("#btn1");
+// let btn1=document.querySelector("#btn1");
+
+// btn1.addEventListener("click",()=>{
+//     console.log("button was clicked handler-1")
+    
+// })
+// btn1.addEventListener("click",()=>{
+//     console.log("button was clicked handler-2")
+    
+// })
+// const handler3 = ()=>{
+//     console.log("button was clicked handler-3")
+// }
+
+// btn1.addEventListener("click",handler3);
+    
+    
+// btn1.addEventListener("click",()=>{
+//     console.log("button was clicked handler-4")
+    
+// })
+
+// btn1.removeEventListener("click",handler3);
+
+
+let modeBtn1=document.querySelector("#btn1");
+
+let mode="light";
 
 btn1.addEventListener("click",()=>{
-    console.log("button was clicked handler-1")
-    
+    if(mode==="light"){
+        mode="dark";
+        document.querySelector("body").style.backgroundColor="black";
+    }
+    else{
+        mode="light";
+        document.querySelector("body").style.backgroundColor="white";
+    }
+    console.log(mode);
 })
-btn1.addEventListener("click",()=>{
-    console.log("button was clicked handler-2")
-    
-})
-const handler3 = ()=>{
-    console.log("button was clicked handler-3")
-}
-
-btn1.addEventListener("click",handler3);
-    
-    
-btn1.addEventListener("click",()=>{
-    console.log("button was clicked handler-4")
-    
-})
-
-btn1.removeEventListener("click",handler3);
-
-
